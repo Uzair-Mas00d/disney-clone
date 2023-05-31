@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Sliders from './Sliders'
-import Viweres from './Viweres'
+import Viewers from './Viewers'
 
 function Home() {
   return (
     <Container>
       <Sliders />
-      <Viweres />
+      <Viewers />
     </Container>
   )
 }
