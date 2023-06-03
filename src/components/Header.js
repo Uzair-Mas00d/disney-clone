@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
     selectUserName,
     selectUserPhoto,
@@ -60,10 +60,12 @@ function Header() {
             :
             <>
                 <NavMenu>
-                    <a>
-                        <img src='/images/home-icon.svg'/>
-                        <span>HOME</span>                        
-                    </a>
+                    <Link to="/" style={{ textDecoration: 'none', color:'white' }}>
+                        <a>
+                            <img src='/images/home-icon.svg'/>
+                            <span>HOME</span>                        
+                        </a>
+                    </Link>
                     <a>
                         <img src='/images/search-icon.svg'/>
                         <span>SEARCH</span>
